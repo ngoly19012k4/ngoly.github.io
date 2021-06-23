@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+       <head>  
+            <title>ID Attribute</title>
+            <style>
+                #myH1Header{
+                    background-color:lightblue;
+                    color:red;
+                    padding: 40px;
+                    text-align: center;
+                }
+                #myH1Content{
+                    background-color:grey;
+                    color:red;
+                    padding: 40px;
+                    text-align: center;
+                }
+                #myH1Footer{
+                    background-color:aquamarine;
+                    color:red;
+                    padding: 40px;
+                    text-align: center;  
+                }
+            </style>
+            <script>
+                function displayID(){
+                    document.getElementByID("myHeader").innerHTML ="Chúc ngày mới vui vẻ";
+                }
+            </script>
+        </head>
+        <body>
+            <button type="button" onclick="displayID();">Show text</button>
+            <h1 id="myHeader">Ngo Thi Ly</h1>
+            <div>
+                <h1 id="myH1Header">My Header</h1>
+            </div>
+            <div>
+                <h1 id="myH1Header">My Content </h1>
+            </div>
+            <div>
+                <h1 id="myH1Footer">My Footer</h1>
+            </div>
+        </body>
+ </html>       

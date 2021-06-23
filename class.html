@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+       <head>
+              <meta charset="utf-8">
+              <title>Class attribute</title>
+              <style>
+                  .dautrang{
+                     padding: 20px;
+                     border: 2px solid rgb(115, 115, 177);
+                     color: rgb(31, 11, 102);
+                     float: inherit;
+                     margin: top 10px;
+                  }
+                  .giuatrang{
+                    padding: 20px;
+                     border: 2px solid rgb(69, 123, 194);
+                     color: rgb(6, 47, 124);
+                     float: inherit;
+                     margin: top 10px;
+                  }
+                  .giuaTrang{
+                      color:rgb(70, 56, 56);   
+                   
+                  }
+              </style>
+        </head>
+        <body>
+            <div class="dautrang";style="background-color: gainsboro">
+                <h1 ">This is top of page</h1>
+                <img src="1.jpg" width="200" height="200px" alt="Cong tac">
+
+            </div>
+            <div class="giuatrang">
+                <h1>Next page</h1>
+                <img src="2.gif" width="200" height="300px" alt="Cong tac">
+
+            </div>
+            <div class="giuaTrang">
+                <h1>End</h1>
+                <img src="4.jpg" width="200" height="200px" alt="tk">
+            </div>
+            <p> 
+                <div class="giuatrang dautrang"; style="background-color:antiquewhite">
+                <h1>LUONG SON HIGH SCHOOL</h1>
+                </div>
+            </p>
+            <br>
+            <script>
+                function show(){
+                    var x = document.getElementsByClassName("giuaTrang");
+                    for (var i=0; i<= x.length; i++){
+                        x[i].style.display ="none";
+                    }
+                }
+            </script>
+            <button onclick="show();">city Hanoi</button>
+            <p class="city ">Hanoi is the capital of Vietnam</p>
+            <br>
+            <br>
+        </body>
+ </html>       
